@@ -1,0 +1,52 @@
+---
+title: "About"
+date: "2020-10-09"
+author: "jashn maloo"
+excerpt: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+---
+
+## topic_name
+
+topic_details
+blah blah blah...
+
+## table of contents
+* topic content 1 [reference](http://dibya.org)
+* renders actual, "native" react dom elements
+* allows you to escape or skip html (try toggling the checkboxes above)
+* if you escape or skip the html, no `dangerouslysetinnerhtml` is used! yay!
+
+
+## getting started
+preliminary question: 
+<button onclick={()=> alert(42)}>what is the answer to the mystery of universe ??</button>
+
+## html block below
+<blockquote>
+this blockquote will change based on the html settings above.
+</blockquote>
+
+## how about some code?
+
+```js
+var react = require('react');
+var markdown = require('react-markdown');
+react.render(
+  <markdown source="# your markdown here" />,
+  document.getelementbyid('content')
+);
+```
+pretty neat, eh?
+
+## tables?
+| feature   | support |
+| --------- | ------- |
+| tables    | ✔ |
+| alignment | ✔ |
+| wewt      | ✔ |
+
+## more info?
+
+read usage information and more on [github](//github.com/rexxars/react-markdown)
+---------------
+a component by [espen hovlandsdal](https://espen.codes/)
